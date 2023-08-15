@@ -1,0 +1,12 @@
+/obj/item/clothing/shoes/magboots/digitigrade
+	name = "digitigrade magboots"
+	desc += "These ones seemed to be specially designed for nonhuman biology."
+	icon = 'monkestation/icons/obj/clothing/shoes_digi'
+	icon = 'monkestation/icons/mob/clothing/species/lizard/shoes_digi'
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
+
+/obj/item/clothing/shoes/magboots/digitigrade/proc/digicheck
+	var/mob/living/carbon/human/H = user
+	if(!(H.dna.species.bodytype & BODYTYPE_DIGITIGRADE))
+		to_chat(H, span_warning("This piece of footwear doesn't fit your feet!"))
+	return
