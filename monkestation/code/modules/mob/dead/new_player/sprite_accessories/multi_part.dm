@@ -13,6 +13,7 @@
 	external_slots = list(ORGAN_SLOT_EXTERNAL_TAIL)
 	icon = 'monkestation/icons/mob/species/lizard/multipart.dmi'
 	icon_state = "lbelly"
+	gender_specific = TRUE
 
 /datum/sprite_accessory/body_markings/glow_belly
 	name = "Glow Belly"
@@ -21,6 +22,7 @@
 	icon = 'monkestation/icons/mob/species/lizard/multipart.dmi'
 	icon_state = "lbelly"
 	is_emissive = TRUE
+	gender_specific = TRUE
 
 /datum/sprite_accessory/spines/short
 	name = "Short"
